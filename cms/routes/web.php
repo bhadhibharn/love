@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BotManController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/check-date', [TestController::class,"gateTest"]);
+
+Route::get('/botman', [BotManController::class,"handle"]);
+
+Route::get('/botman', [BotManController::class,"handle"]);

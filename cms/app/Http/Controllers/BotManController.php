@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class BotManController extends Controller
 {
-    //
+    public function handle($value='')
+    {
+        %
+    }
 }
